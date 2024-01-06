@@ -9,6 +9,10 @@
   overflow: hidden;
 }
 
+.nav-container {
+  background-color: #1c1d25 !important;
+}
+
 .nav a {
   text-decoration: none;
 }
@@ -40,3 +44,4 @@
 .navLink:hover {
   background-color: #008183;
 }
+

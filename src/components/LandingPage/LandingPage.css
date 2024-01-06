@@ -78,3 +78,12 @@ Grid
   flex-basis: 100%;
   max-width: 100%;
 }
+
+
+.bg-black {
+  background-color: #1c1d25;
+}
+
+.text-white {
+  color: #fff;
+}
