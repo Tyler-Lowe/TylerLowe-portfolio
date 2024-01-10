@@ -121,6 +121,71 @@ input {
   margin-top: 0;
 }
 
-.m-t-b {
+.m-b-n {
   margin-bottom: 0;
 }
+
+.p-t-n {
+  padding-top: 0;
+}
+
+.p-b-n {
+  padding-bottom: 0;
+}
+
+.p-r-n {
+  padding-right: 0;
+}
+
+.p-l-n {
+  padding-left: 0;
+}
+
+.p-l-s {
+  padding-left: .25rem;
+}
+
+.p-r-s {
+  padding-right: .25rem;
+}
+
+.p-r-m{
+  padding-right: .5rem;
+}
+
+.p-r-lg{
+  padding-right: 1rem;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.page-section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.clean-list {
+  list-style: none;
+  padding: 0;
+}
+
+.clean-list > li {
+  padding-bottom: 1rem;
+}
+

@@ -87,3 +87,29 @@ Grid
 .text-white {
   color: #fff;
 }
+
+.name-text {
+  font-size: 4rem;
+}
+
+.hero-info {
+  padding-top: 3rem;
+}
+
+.bg-initial {
+  background-image: url(../../images/initial-lg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 6rem 0 7rem 0;
+}
+
+.hero-button {
+  margin-top: 2rem;
+  padding: .5rem 2rem;
+  font-size: 1rem;
+  background-color: #c50b30;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+}

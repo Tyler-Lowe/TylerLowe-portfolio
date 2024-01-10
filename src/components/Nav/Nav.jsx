@@ -17,8 +17,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import initialLogo from '../../images/initial-logo.svg';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Projects', 'About', 'Resume'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Nav() {
@@ -45,9 +46,9 @@ function Nav() {
     <AppBar className='nav-container' position="static">
       <Container maxWidth="lg">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Box>
-          <Typography
+          <img class="logo-size" src={initialLogo} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, width: 10 }} />
+          <Box className="HELLO">
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -63,7 +64,7 @@ function Nav() {
             }}
           >
             LOGO
-          </Typography>
+          </Typography> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -77,6 +78,7 @@ function Nav() {
               <MenuIcon />
             </IconButton>
             <Menu
+            className='display-flex justify-content-end'
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -95,14 +97,14 @@ function Nav() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem className='display-flex justify-content-end' key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -120,9 +122,9 @@ function Nav() {
             }}
           >
             LOGO
-          </Typography>
+          </Typography> */}
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box className='display-flex justify-content-end' sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
