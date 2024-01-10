@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 import initialLg from '../../images/initial-lg.svg';
 import GitHubIcon2 from '../../images/github2.svg';
 import LinkedInIcon from '../../images/linkedin.svg';
+import ResumeIcon from '../../images/resume-icon.svg';
+import EmailIcon from '../../images/email-icon.svg';
 import './LandingPage.css';
 import Project from '../Projects/Projects';
 
@@ -29,16 +31,16 @@ function LandingPage() {
           </Grid>
           <Grid item lg={4} className='align-content-right display-flex justify-content-end p-r-lg'>
             <Grid container lg={1} className='display-flex'>
-              <img class="p-r-lg" src={GitHubIcon2} alt="" />
+              <img class="" src={GitHubIcon2} alt="" />
               <img src={LinkedInIcon} alt="" />
-              <img class="p-r-lg" src={GitHubIcon2} alt="" />
+              <img class="" src={ResumeIcon} alt="" />
+              <img class="" src={EmailIcon} alt="" />
             </Grid>
           </Grid>
         </Grid>
       </Box>
       <Project />
       <AboutSection />
-      <Project />
     </div>
   );
 }

@@ -169,8 +169,16 @@ input {
   justify-content: center;
 }
 
+.justify-content-spa {
+  justify-content: space-around;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 .page-section {

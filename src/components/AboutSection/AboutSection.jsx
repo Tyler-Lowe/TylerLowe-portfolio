@@ -11,6 +11,8 @@ import reactImg from '../../images/react-2.svg';
 import reduxImg from '../../images/redux.svg';
 import GitHubIcon2 from '../../images/github2.svg';
 import LinkedInIcon from '../../images/linkedin.svg';
+import ResumeIcon from '../../images/resume-icon.svg';
+import EmailIcon from '../../images/email-icon.svg';
 import './AboutSection.css';
 
 
@@ -28,7 +30,7 @@ function AboutSection() {
                         </div>
                         <div class="about-text">
                             <h2 class=''>About me</h2>
-                            <p>Full-Stack Software Engineer</p>
+                            <p class="text-bold">Full-Stack Software Engineer</p>
                             <p>Hey! I'm a Software Engineer with a knack for building cool stuff. I've got a background in Mechanical Engineering and I'm currently wrapping up my Computer Science degree. But the real game changer was diving into a Full Stack Coding Bootcamp. It's there I discovered my love for turning lines of code into something amazing. <br /> <br />
                                 In the world of web development, I've delved into everything from crafting sleek user interfaces to engineering complex backend systems. One of my standout projects involved using APIs to enhance how users interact with content, combining React.js, Node.js, and my creative problem-solving skills. This project was more than just coding; it was about weaving together data, functionality, and user experience to create something truly impactful.<br /><br />
                                 When I'm not coding, you'll find me outdoors - camping, fishing, or just taking in the fresh air. And of course, I'm always up for a gaming session to unwind and get inspired.
@@ -44,8 +46,8 @@ function AboutSection() {
                                 <li>Bachelor of Science in Mechanical Engineering - Tennessee Tech University</li>
                                 <li>United States Army Veteran</li>
                             </ul>
-                            <p class='text-white text-center'>Technology</p>
-                            <div class='display-flex justify-content-center'>
+                            <h3 class='text-white text-center'>Technology</h3>
+                            <div class='display-flex justify-content-spa'>
                                     <img class="p-l-s tech-logo" src={javaScriptImg} alt="JavaScript" />
                                     <img class="p-l-s tech-logo" src={reactImg} alt="React" />
                                     <img class="p-l-s tech-logo" src={reduxImg} alt="Redux" />
@@ -54,12 +56,13 @@ function AboutSection() {
                                     <img class="p-l-s tech-logo" src={postGresImg} alt="PostgreSQL" />
                                     <img class="p-l-s tech-logo" src={muiImg} alt="Material-UI" />
                             </div>
-                            <p class="text-white text-center">Contact</p>
+                            <h3 class="text-white text-center">Contact</h3>
                             <div>
                                 <div class='display-flex justify-content-center'>
-                                    <img class="p-l-s tech-logo" src={GitHubIcon2} alt="JavaScript" />
                                     <img class="p-l-s tech-logo" src={LinkedInIcon} alt="React" />
-                                    <img class="p-l-s tech-logo" src={GitHubIcon2} alt="Redux" />
+                                    <img class="p-l-s tech-logo" src={EmailIcon} alt="JavaScript" />
+                                    <img class="p-l-s tech-logo" src={ResumeIcon} alt="Redux" />
+                                    <img class="p-l-s tech-logo" src={GitHubIcon2} alt="JavaScript" />
                             </div>
                             </div>
                         </div>
