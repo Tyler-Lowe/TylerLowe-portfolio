@@ -21,7 +21,7 @@ function AboutSection() {
     return (
         <div class="bg-black page-section">
             <Container maxWidth="lg">
-                <h1 class="text-center text-white">About Me</h1>
+                <h1 class="text-center text-white">About</h1>
                 <Grid container sx={{ boxShadow: '2px 2px 10px rgba(0, 0, 0, 0.5)', justifyContent: 'center' }}>
                     {/* <Box sx={{ boxShadow: '2px 2px 10px rgba(0, 0, 0, 0.5)', display: 'flex' }}> */}
                     <Grid item lg={6} sx={{ backgroundColor: '#ECECEC' }} >
@@ -29,7 +29,7 @@ function AboutSection() {
                             <p class='bg-text'>About</p>
                         </div>
                         <div class="about-text">
-                            <h2 class=''>About me</h2>
+                            <h2 class=''>About Me</h2>
                             <p class="text-bold">Full-Stack Software Engineer</p>
                             <p>Hey! I'm a Software Engineer with a knack for building cool stuff. I've got a background in Mechanical Engineering and I'm currently wrapping up my Computer Science degree. But the real game changer was diving into a Full Stack Coding Bootcamp. It's there I discovered my love for turning lines of code into something amazing. <br /> <br />
                                 In the world of web development, I've delved into everything from crafting sleek user interfaces to engineering complex backend systems. One of my standout projects involved using APIs to enhance how users interact with content, combining React.js, Node.js, and my creative problem-solving skills. This project was more than just coding; it was about weaving together data, functionality, and user experience to create something truly impactful.<br /><br />
