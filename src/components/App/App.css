@@ -237,10 +237,4 @@ input {
 
 }
 
-.project-img:hover {
-  transform: scale(1.025);
-  transition: calc(.5s);
-  background-color: rgba(76, 75, 75, .5);
-  z-index: 100;
-}
 

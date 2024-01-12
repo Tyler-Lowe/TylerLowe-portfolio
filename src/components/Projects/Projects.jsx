@@ -16,15 +16,38 @@ import './Projects.css';
 import RegisterForm from '../RegisterForm/RegisterForm';
 
 function Project() {
+    // Image overlay functionality
+
+    const [show, setShow] = useState(false);
+
+    const showOverlay = () => {
+        setShow(true);
+    };
+
+    const hideOverlay = () => {
+        setShow(false);
+    }
+
+
     return (
         <div>
             <Container maxWidth="lg">
                 <h1 class="text-center">Projects</h1>
-                <Grid container spacing={6} >
+                <Grid container spacing={6} sx={{marginBottom: '5rem'}} >
                     <Grid item lg={7} className='' >
-                        <div>
+                        <div className='project-container' >
                             {/* Have a screen shot of the project that is a link that will take you to the site */}
-                            <img class="project-img" src={KeyboardHeroSS} alt='Project Image'></img>
+                            <div className='project-img-container' onMouseOver={showOverlay} onMouseLeave={hideOverlay}>
+                                <img class="project-img" src={KeyboardHeroSS} alt='Project Image'></img>
+                                {show && (
+                                    <a href="#" target='_blank'>
+                                    <div className="overlay">
+                                        <h2>Visit StickIt</h2>
+                                        <p>Description</p>
+                                    </div>
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     </Grid>
                     <Grid item lg={5} className=''>
@@ -32,15 +55,15 @@ function Project() {
                         <h4></h4>
                         <p>A fully responsive web application that offers drum set players a curated list of exercises based on their focus areas, goals, and time constraints, eliminating the problem of deciding what to practice. This curated list is called a “Smart Session”</p>
                         <p class="text-center text-bold">Tech used for project</p>
-                            <div class="display-flex justify-content-center">
-                                <img class="p-l-s icon" src={javaScriptImg} alt="JavaScript" />
-                                <img class="p-l-s icon" src={reactImg} alt="React" />
-                                <img class="p-l-s icon" src={reduxImg} alt="Redux" />
-                                <img class="p-l-s icon" src={nodeImg} alt="Node.js" />
-                                <img class="p-l-s icon" src={expressImg} alt="Express" />
-                                <img class="p-l-s icon" src={postGresImg} alt="PostgreSQL" />
-                                <img class="p-l-s icon" src={muiImg} alt="Material-UI" />
-                            </div>       
+                        <div class="display-flex justify-content-center">
+                            <img class="p-l-s icon" src={javaScriptImg} alt="JavaScript" />
+                            <img class="p-l-s icon" src={reactImg} alt="React" />
+                            <img class="p-l-s icon" src={reduxImg} alt="Redux" />
+                            <img class="p-l-s icon" src={nodeImg} alt="Node.js" />
+                            <img class="p-l-s icon" src={expressImg} alt="Express" />
+                            <img class="p-l-s icon" src={postGresImg} alt="PostgreSQL" />
+                            <img class="p-l-s icon" src={muiImg} alt="Material-UI" />
+                        </div>
                         <div class="display-flex text-center justify-content-center m-t-lg">
                             <button class="m-r-lg project-btn">Visit Site</button>
                             <button class="m-l-lg project-btn">Source Code</button>
@@ -48,6 +71,50 @@ function Project() {
                     </Grid>
                 </Grid>
             </Container>
+            <div className='bg-black'>
+            <Container maxWidth="lg">
+                <Grid container spacing={6} sx={{marginBottom: '5rem'}} className='text-white page-section' >
+                    <Grid item lg={5} className=''>
+                    <div className='project-border'>
+                        <h2 class="text-center">StickIt</h2>
+                        <h4></h4>
+                        <p>A fully responsive web application that offers drum set players a curated list of exercises based on their focus areas, goals, and time constraints, eliminating the problem of deciding what to practice. This curated list is called a “Smart Session”</p>
+                        <p class="text-center text-bold">Tech used for project</p>
+                        <div class="display-flex justify-content-center">
+                            <img class="p-l-s icon" src={javaScriptImg} alt="JavaScript" />
+                            <img class="p-l-s icon" src={reactImg} alt="React" />
+                            <img class="p-l-s icon" src={reduxImg} alt="Redux" />
+                            <img class="p-l-s icon" src={nodeImg} alt="Node.js" />
+                            <img class="p-l-s icon" src={expressImg} alt="Express" />
+                            <img class="p-l-s icon" src={postGresImg} alt="PostgreSQL" />
+                            <img class="p-l-s icon" src={muiImg} alt="Material-UI" />
+                        </div>
+                        <div class="display-flex text-center justify-content-center m-t-lg">
+                            <button class="m-r-lg project-btn">Visit Site</button>
+                            <button class="m-l-lg project-btn">Source Code</button>
+                        </div>
+                    </div>
+                    </Grid>
+                    <Grid item lg={7} className='' >
+                        <div className='project-container' >
+                            {/* Have a screen shot of the project that is a link that will take you to the site */}
+                            <div className='project-img-container' onMouseOver={showOverlay} onMouseLeave={hideOverlay}>
+                                <img class="project-img" src={KeyboardHeroSS} alt='Project Image'></img>
+                                {show && (
+                                    <a href="#" target='_blank'>
+                                    <div className="overlay">
+                                        <h2>Visit StickIt</h2>
+                                        <p>Description</p>
+                                    </div>
+                                    </a>
+                                )}
+                            </div>
+                        </div>
+                    </Grid>
+                </Grid>
+            </Container>
+            </div>
+            
         </div>
     );
 }
