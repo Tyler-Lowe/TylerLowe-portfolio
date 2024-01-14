@@ -145,6 +145,10 @@ input {
   padding-bottom: 0;
 }
 
+.p-b-m {
+  padding-bottom: .5rem;
+}
+
 .p-r-n {
   padding-right: 0;
 }

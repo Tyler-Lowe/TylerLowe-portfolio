@@ -19,7 +19,7 @@ function LandingPage() {
 
 
   return (
-    <div>
+    <div className='test1'>
       <Box class="text-white bg-initial bg-black" sx={{ height: '100vh' }}>
         <Grid container >
           <Grid item lg={8} className='display-flex justify-content-center' >
@@ -31,10 +31,21 @@ function LandingPage() {
           </Grid>
           <Grid item lg={4} className='align-content-right display-flex justify-content-end p-r-lg'>
             <Grid container lg={1} className='display-flex'>
-              <img class="" src={GitHubIcon2} alt="" />
-              <img src={LinkedInIcon} alt="" />
-              <img class="" src={ResumeIcon} alt="" />
-              <img class="" src={EmailIcon} alt="" />
+              <div className='hero-icons'>
+              <a href="#" target='_blank'>
+                <img class="p-b-m" src={GitHubIcon2} alt="" />
+              </a>
+              <a href="#" target='_blank'>
+                <img className='p-b-m' src={LinkedInIcon} alt="" />
+              </a>
+              <a href="#" target='_blank'>
+                <img class="p-b-m" src={EmailIcon} alt="" />         
+              </a>
+              <a href="#" target='_blank'>
+                <img class="p-b-m" src={ResumeIcon} alt="Resume" />
+              </a>
+              </div>
+
             </Grid>
           </Grid>
         </Grid>

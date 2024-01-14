@@ -93,7 +93,12 @@ Grid
 }
 
 .hero-info {
-  padding-top: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.hero-icons {
+  align-self: center;
 }
 
 .bg-initial {
@@ -106,10 +111,27 @@ Grid
 
 .hero-button {
   margin-top: 2rem;
-  padding: .5rem 2rem;
+  padding: .75rem 2rem;
   font-size: 1rem;
   background-color: #c50b30;
-  border: none;
+  border: 1px solid #c50b30;
+  /* border: none; */
+  border-radius: 5px;
   color: #fff;
   font-weight: bolder;
+  cursor: pointer;
 }
+
+.hero-button:hover {
+  /* background-color: rgb(34,55,106, 0.9); */
+  /* text-decoration: underline; */
+  transition: .25s;
+  border: 1px solid #fff;
+}
+
+.hero-icons > a > img:hover{
+  transform: scale(1.05);
+  transition: .5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
