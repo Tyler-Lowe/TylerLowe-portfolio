@@ -33,7 +33,7 @@ function Project() {
         <div>
             <Container maxWidth="lg">
                 <h1 class="text-center">Projects</h1>
-                <Grid container spacing={6} sx={{marginBottom: '5rem'}} >
+                <Grid container spacing={6} sx={{marginBottom: '5rem'}} className='page-section' >
                     <Grid item lg={7} className='' >
                         <div className='project-container' >
                             {/* Have a screen shot of the project that is a link that will take you to the site */}
@@ -71,9 +71,10 @@ function Project() {
                     </Grid>
                 </Grid>
             </Container>
-            <div className='bg-black'>
+            <hr />
+        
             <Container maxWidth="lg">
-                <Grid container spacing={6} sx={{marginBottom: '5rem'}} className='text-white page-section' >
+                <Grid container spacing={6} sx={{marginBottom: '5rem', marginTop: '5rem'}}  >
                     <Grid item lg={5} className=''>
                     <div className='project-border'>
                         <h2 class="text-center">StickIt</h2>
@@ -98,7 +99,7 @@ function Project() {
                     <Grid item lg={7} className='' >
                         <div className='project-container' >
                             {/* Have a screen shot of the project that is a link that will take you to the site */}
-                            <div className='project-img-container' onMouseOver={showOverlay} onMouseLeave={hideOverlay}>
+                            <div className='project-img-container project-img-container-bs' onMouseOver={showOverlay} onMouseLeave={hideOverlay}>
                                 <img class="project-img" src={KeyboardHeroSS} alt='Project Image'></img>
                                 {show && (
                                     <a href="#" target='_blank'>
@@ -113,7 +114,7 @@ function Project() {
                     </Grid>
                 </Grid>
             </Container>
-            </div>
+            
             
         </div>
     );

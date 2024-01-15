@@ -113,6 +113,13 @@ input {
 
 
 /* Utility Classes */
+.page-section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .align-content-right {
   align-content: end;
 }
@@ -201,12 +208,7 @@ input {
   font-weight: bold;
 }
 
-.page-section {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
+
 
 .clean-list {
   list-style: none;
@@ -237,8 +239,9 @@ input {
 
 /* Project Images */
 
-.project-img {
-
+hr {
+  width: 30%;
+  border-color: #1c1d25;
 }
 
 

@@ -19,7 +19,7 @@ import './AboutSection.css';
 
 function AboutSection() {
     return (
-        <div class="bg-black page-section">
+        <div class="bg-black page-section m-b-n">
             <Container maxWidth="lg">
                 <h1 class="text-center text-white">About</h1>
                 <Grid container sx={{ boxShadow: '2px 2px 10px rgba(0, 0, 0, 0.5)', justifyContent: 'center' }}>
