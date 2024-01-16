@@ -56,15 +56,34 @@ function AboutSection() {
                                     <img class="p-l-s tech-logo" src={postGresImg} alt="PostgreSQL" />
                                     <img class="p-l-s tech-logo" src={muiImg} alt="Material-UI" />
                             </div>
-                            <h3 class="text-white text-center">Contact</h3>
-                            <div>
-                                <div class='display-flex justify-content-center'>
-                                    <img class="p-l-s tech-logo" src={LinkedInIcon} alt="React" />
-                                    <img class="p-l-s tech-logo" src={EmailIcon} alt="JavaScript" />
-                                    <img class="p-l-s tech-logo" src={ResumeIcon} alt="Redux" />
-                                    <img class="p-l-s tech-logo" src={GitHubIcon2} alt="JavaScript" />
-                            </div>
-                            </div>
+                            <h3 class="text-white text-center p-t-lg">Contact Links</h3>
+                    
+
+                          
+                                <div class='text-center justify-content-spa display-flex icon-wrapper'>
+                                    <div className='hero-icons'>
+                                        <a href="https://github.com/Tyler-Lowe" target='_blank'>
+                                        <img class="p-l-s tech-logo" src={GitHubIcon2} alt="JavaScript" />
+                                        </a>
+                                    </div>
+                                    <div className='hero-icons'>
+                                        <a href="https://www.linkedin.com/in/tyleralowe/" target='_blank'>
+                                        <img class="p-l-s tech-logo" src={LinkedInIcon} alt="React" />
+                                        </a>
+                                    </div>
+                                    <div className='hero-icons'>
+                                        <a href="mailto:tyler.a.lowe@gmail.com" target='_blank'>
+                                        <img class="p-l-s tech-logo" src={EmailIcon} alt="JavaScript" /> 
+                                        </a>   
+                                    </div>
+                                    <div className='hero-icons'>
+                                        <a href="../../images/TylerLowe_ResumeTemp.pdf" download={"TylerLowe_Resume"}>
+                                        <img class="p-l-s tech-logo" src={ResumeIcon} alt="Redux" />
+                                        </a>
+                                    </div>
+                                </div>
+                             
+                        
                         </div>
                         <div class="overflow-hidden">
                             <p class='bg-text-bottom overflow-hidden'>Contact</p>
