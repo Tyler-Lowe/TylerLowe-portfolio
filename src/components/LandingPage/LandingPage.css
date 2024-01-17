@@ -101,6 +101,14 @@ Grid
   align-self: center;
 }
 
+.bg-initial-2 {
+  background-image: url(../../images/bg-test-gpt\ .png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 6rem 0 7rem 0; */
+}
+
 .bg-initial {
   background-image: url(../../images/initial-lg.svg);
   background-position: center;
@@ -135,3 +143,7 @@ Grid
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.main-section-container {
+  padding: 5rem 0;
+  
+}

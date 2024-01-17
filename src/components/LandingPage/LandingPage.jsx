@@ -21,8 +21,9 @@ function LandingPage() {
 
 
   return (
-    <div className='test1'>
-      <Box class="text-white bg-initial bg-black" sx={{ height: '100vh' }}>
+    <>
+    <div className='main-section-container bg-black bg-initial-2'>
+      <Box class="text-white bg-initial" sx={{ height: '100vh' }}>
         <Grid container >
           <Grid item lg={8} className='display-flex justify-content-center' >
             <div class="hero-info">
@@ -54,9 +55,12 @@ function LandingPage() {
           </Grid>
         </Grid>
       </Box>
+      </div>
+      <div>
       <Project />
       <AboutSection />
     </div>
+    </>
   );
 }
 
