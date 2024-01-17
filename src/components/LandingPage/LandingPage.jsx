@@ -7,6 +7,7 @@ import GitHubIcon2 from '../../images/github2.svg';
 import LinkedInIcon from '../../images/linkedin.svg';
 import ResumeIcon from '../../images/resume-icon.svg';
 import EmailIcon from '../../images/email-icon.svg';
+import  Button  from '@mui/material/Button';
 import Resume from '../../images/TylerLowe_ResumeTemp.pdf';
 import './LandingPage.css';
 import Project from '../Projects/Projects';
@@ -27,7 +28,9 @@ function LandingPage() {
             <div class="hero-info">
               <h1 class="text-white m-t-n name-text m-b-n">Tyler Lowe</h1>
               <h4 class="m-b-n m-t-n">Full-Stack Software Engineer</h4>
-              <button class="hero-button">About Me</button>
+              <div>
+                <button class="hero-button">About Me</button>
+              </div>
             </div>
           </Grid>
           <Grid item lg={4} className='align-content-right display-flex justify-content-end p-r-lg'>

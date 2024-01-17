@@ -41,6 +41,13 @@ function Nav() {
     setAnchorElUser(null);
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div class="nav-container">
     <AppBar className='nav-container' position="static">
@@ -125,15 +132,31 @@ function Nav() {
           </Typography> */}
 
           <Box className='display-flex justify-content-end' sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+              className='navbar-btn'
+                onClick={() => {handleCloseNavMenu(); scrollToSection('projects')}}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                
               >
-                {page}
+                Projects
               </Button>
-            ))}
+              <Button
+              className='navbar-btn'
+              onClick={() => {handleCloseNavMenu(); scrollToSection('about')}}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+                
+              >
+                About
+              </Button>
+              <Button
+              className='navbar-btn'
+              onClick={() => {handleCloseNavMenu(); scrollToSection('resume')}}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+                
+              >
+                Resume
+              </Button>
           </Box>
 
           {/* End-aligned content */}

@@ -21,7 +21,7 @@ function AboutSection() {
     return (
         <div class="bg-black page-section m-b-n">
             <Container maxWidth="lg">
-                <h1 class="text-center text-white">About</h1>
+                <h1 id='about' class="text-center text-white page-section m-t-n m-b-lg p-b-n">About</h1>
                 <Grid container sx={{ boxShadow: '2px 2px 10px rgba(0, 0, 0, 0.5)', justifyContent: 'center' }}>
                     {/* <Box sx={{ boxShadow: '2px 2px 10px rgba(0, 0, 0, 0.5)', display: 'flex' }}> */}
                     <Grid item lg={6} sx={{ backgroundColor: '#ECECEC' }} >

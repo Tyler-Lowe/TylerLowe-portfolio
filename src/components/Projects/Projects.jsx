@@ -32,7 +32,7 @@ function Project() {
     return (
         <div>
             <Container maxWidth="lg">
-                <h1 class="text-center">Projects</h1>
+                <h1 id='projects' class="text-center page-section m-t-lg m-b-n p-b-n">Projects</h1>
                 <Grid container spacing={6} sx={{marginBottom: '5rem'}} className='page-section' >
                     <Grid item lg={7} className='' >
                         <div className='project-container' >
