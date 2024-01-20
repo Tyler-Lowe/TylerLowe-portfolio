@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import KeyboardHeroSS from '../../images/keyboardheross.JPG';
+import StickItSS from '../../images/stick-it-session-2.png';
 import expressImg from '../../images/expressjs-icon.svg';
 import javaScriptImg from '../../images/logo-javascript.svg';
 import muiImg from '../../images/material-ui-1.svg';
@@ -33,26 +33,24 @@ function Project() {
         <div>
             <Container maxWidth="lg">
                 <h1 id='projects' class="text-center page-section m-t-lg m-b-n p-b-n">Projects</h1>
-                <Grid container spacing={6} sx={{marginBottom: '5rem'}} className='page-section' >
+                <Grid container spacing={6} sx={{marginBottom: '5rem', alignItems: 'center', marginTop: '1rem'}} className='page-section p-t-n' >
                     <Grid item lg={7} className='' >
                         <div className='project-container' >
                             {/* Have a screen shot of the project that is a link that will take you to the site */}
-                            <div className='project-img-container' onMouseOver={showOverlay} onMouseLeave={hideOverlay}>
-                                <img class="project-img" src={KeyboardHeroSS} alt='Project Image'></img>
+                            <div className='project-img-container project-img-container-bs' onMouseOver={showOverlay} onMouseLeave={hideOverlay}>
+                                <img class="project-img" src={StickItSS} alt='Project Image'></img>
                                 {show && (
-                                    <a href="#" target='_blank'>
+                                    <a href="https://stickit-b5a16042fa87.herokuapp.com/#/login" target='_blank'>
                                     <div className="overlay">
                                         <h2>Visit StickIt</h2>
-                                        <p>Description</p>
                                     </div>
                                     </a>
                                 )}
                             </div>
                         </div>
                     </Grid>
-                    <Grid item lg={5} className=''>
-                        <h2 class="text-center">StickIt</h2>
-                        <h4></h4>
+                    <Grid item lg={5} className='p-t-n'>
+                        <h2 class="text-center m-t-n">StickIt</h2>
                         <p>A fully responsive web application that offers drum set players a curated list of exercises based on their focus areas, goals, and time constraints, eliminating the problem of deciding what to practice. This curated list is called a “Smart Session”</p>
                         <p class="text-center text-bold">Tech used for project</p>
                         <div class="display-flex justify-content-center">
@@ -74,10 +72,10 @@ function Project() {
             <hr />
         
             <Container maxWidth="lg">
-                <Grid container spacing={6} sx={{marginBottom: '5rem', marginTop: '5rem'}}  >
+                <Grid container spacing={6} sx={{marginBottom: '5rem', marginTop: '5rem', alignItems: 'center'}}  >
                     <Grid item lg={5} className=''>
                     <div className='project-border'>
-                        <h2 class="text-center">StickIt</h2>
+                        <h2 class="text-center m-t-n">StickIt</h2>
                         <h4></h4>
                         <p>A fully responsive web application that offers drum set players a curated list of exercises based on their focus areas, goals, and time constraints, eliminating the problem of deciding what to practice. This curated list is called a “Smart Session”</p>
                         <p class="text-center text-bold">Tech used for project</p>
@@ -100,12 +98,11 @@ function Project() {
                         <div className='project-container' >
                             {/* Have a screen shot of the project that is a link that will take you to the site */}
                             <div className='project-img-container project-img-container-bs' onMouseOver={showOverlay} onMouseLeave={hideOverlay}>
-                                <img class="project-img" src={KeyboardHeroSS} alt='Project Image'></img>
+                                <img class="project-img" src={StickItSS} alt='Project Image'></img>
                                 {show && (
                                     <a href="#" target='_blank'>
                                     <div className="overlay">
                                         <h2>Visit StickIt</h2>
-                                        <p>Description</p>
                                     </div>
                                     </a>
                                 )}

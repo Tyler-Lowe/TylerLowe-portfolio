@@ -1,12 +1,14 @@
 .project-img-container {
     position: relative;
     display: inline-block;
+    
 }
 
 .project-img {
     max-width: 100%;
     height: auto;
     display: block;
+    border-radius: 5px;
 }
 
 .overlay {
@@ -23,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 .overlay:hover {
@@ -54,5 +57,7 @@
 }
 
 .project-img-container-bs {
-    box-shadow: rgba(10, 10, 26, 0.552) 0px 7px 29px 0px;
+    /* boxShadow: '2px 2px 10px rgba(0, 0, 0, 0.5)' */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
