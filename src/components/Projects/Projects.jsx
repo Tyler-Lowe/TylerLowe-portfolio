@@ -3,6 +3,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import StickItSS from '../../images/stick-it-session-2.png';
+import LifeBuilder from '../../images/life-builder.png'
 import expressImg from '../../images/expressjs-icon.svg';
 import javaScriptImg from '../../images/logo-javascript.svg';
 import muiImg from '../../images/material-ui-1.svg';
@@ -75,7 +76,7 @@ function Project() {
                 <Grid container spacing={6} sx={{marginBottom: '5rem', marginTop: '5rem', alignItems: 'center'}}  >
                     <Grid item lg={5} className=''>
                     <div className='project-border'>
-                        <h2 class="text-center m-t-n">StickIt</h2>
+                        <h2 class="text-center m-t-n">LifeBuilder</h2>
                         <h4></h4>
                         <p>A fully responsive web application that offers drum set players a curated list of exercises based on their focus areas, goals, and time constraints, eliminating the problem of deciding what to practice. This curated list is called a “Smart Session”</p>
                         <p class="text-center text-bold">Tech used for project</p>
@@ -98,11 +99,11 @@ function Project() {
                         <div className='project-container' >
                             {/* Have a screen shot of the project that is a link that will take you to the site */}
                             <div className='project-img-container project-img-container-bs' onMouseOver={showOverlay} onMouseLeave={hideOverlay}>
-                                <img class="project-img" src={StickItSS} alt='Project Image'></img>
+                                <img class="project-img" src={LifeBuilder} alt='Project Image'></img>
                                 {show && (
                                     <a href="#" target='_blank'>
                                     <div className="overlay">
-                                        <h2>Visit StickIt</h2>
+                                        <h2>Visit LifeBuilder</h2>
                                     </div>
                                     </a>
                                 )}
